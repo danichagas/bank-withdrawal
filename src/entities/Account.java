@@ -1,14 +1,14 @@
 package entities;
 
-public class Bank {
+public class Account {
     private int number;
     private String holder;
     private double balance;
 
-    public Bank() {
+    public Account() {
     }
 
-    public Bank(int number, String holder, double balance) {
+    public Account(int number, String holder, double balance) {
         this.number = number;
         this.holder = holder;
         this.balance = balance;
