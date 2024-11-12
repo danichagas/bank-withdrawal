@@ -3,15 +3,15 @@ package entities;
 public class Bank {
     private int number;
     private String holder;
-    private double deposit;
+    private double balance;
 
     public Bank() {
     }
 
-    public Bank(int number, String holder, double deposit) {
+    public Bank(int number, String holder, double balance) {
         this.number = number;
         this.holder = holder;
-        this.deposit = deposit;
+        this.balance = balance;
     }
 
     public int getNumber() {
@@ -26,8 +26,15 @@ public class Bank {
         this.holder = holder;
     }
 
-    public double getDeposit() {
-        return deposit;
+    public double getBalance() {
+        return balance;
     }
 
+    public void deposit(int value) {
+        this.balance += value;
+    }
+
+    public void withdraw(int value) {
+        this.balance -= value - 5;
+    }
 }
