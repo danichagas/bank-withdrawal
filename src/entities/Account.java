@@ -39,4 +39,13 @@ public class Account {
     public void withdraw(int value) {
         this.balance -= value + 5.0;
     }
+
+    public String toString() {
+        return "Conta "
+                + number
+                + ", Titular: "
+                + holder
+                + ", Saldo: $ "
+                + String.format("%.2f", balance);
+    }
 }
