@@ -36,7 +36,7 @@ public class Account {
         this.balance += value;
     }
 
-    public void withdraw(int value) {
+    public void withdraw(double value) {
         this.balance -= value + 5.0;
     }
 
