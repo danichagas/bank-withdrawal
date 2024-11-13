@@ -32,7 +32,7 @@ public class Account {
         return balance;
     }
 
-    public void deposit(int value) {
+    public void deposit(double value) {
         this.balance += value;
     }
 
